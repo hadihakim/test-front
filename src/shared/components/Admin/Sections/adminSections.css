@@ -1,0 +1,216 @@
+.admin-section {
+    width: 100%;
+    padding: 4.375rem 0 0;
+}
+
+.half-padding-bottom {
+    padding-bottom: 2.1875rem;
+}
+
+.about-home-img-container {
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: 100%;
+
+}
+
+.about-home-img-container img {
+    width: 100%;
+}
+
+.admin-container {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.admin-container>div {
+    margin: .7rem;
+    min-height: 40vh;
+}
+
+.about-home-img-container {
+    flex-basis: 25%;
+}
+
+.admin-content-container {
+    flex-basis: 40%;
+}
+
+@media (max-width: 912px) {
+    .about-home-img-container {
+        flex-basis: 40%;
+    }
+}
+
+@media (max-width: 712px) {
+    .about-home-img-container {
+        flex-basis: 50%;
+    }
+
+    .admin-content-container {
+        flex-basis: 50%;
+    }
+}
+
+@media (max-width: 375px) {
+    .about-home-img-container {
+        flex-basis: 80%;
+    }
+
+    .admin-content-container {
+        flex-basis: 80%;
+    }
+}
+
+@media (min-width: 412px) {
+    .admin-upload-section {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.admin-upload-section .form-control {
+    margin: 0;
+}
+
+.admin-upload-section button {
+    background-color: #f2f2f2;
+    color: #525f7f;
+}
+
+.admin-content-container.home-about .input-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    font-style: italic;
+    font-family: Cambria;
+    height: 2.5rem;
+}
+
+.admin-content-container .textarea-description {
+    font-size: 15px;
+    color: #000;
+    line-height: 26px;
+}
+
+.admin-content-container .textarea-description2 {
+    font-size: 15px;
+    color: #000;
+    line-height: 26px;
+}
+
+.admin-content-container.product .input-title {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    font-family: fantasy;
+    height: 2.5rem;
+}
+
+.admin-content-container .input-buttonText {
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #000;
+    height: 2rem;
+}
+
+.admin-content-container .input-buttonLink {
+    height: 2rem;
+}
+
+.founder-details-container .input-title {
+    font-size: 24px;
+    font-weight: 500;
+    color: #333333;
+    font-family: inherit;
+    line-height: 1.1;
+    height: 2.5rem;
+}
+
+.founder-details-container .input-subtitle {
+    font-size: 24px;
+    font-weight: bold;
+    color: #000;
+    font-family: fantasy;
+    letter-spacing: 2px;
+    height: 2.5rem;
+}
+
+.founder-details-container .textarea-description {
+    font-size: 15px;
+    color: #000;
+    font-style: italic;
+    text-align: justify;
+    line-height: 26px;
+}
+
+.textarea-description, .textarea-description2 {
+    resize: none;
+}
+
+.founder-details-container .button-admin-founder {
+    margin: 1rem !important
+}
+
+.contact-about-section.admin-contact-about .contact-about-container {
+    padding: 0 0 2rem 0;
+}
+
+.contact-about-section.admin-contact-about .input-title {
+    font-size: 24px;
+    font-weight: 600;
+    color: white;
+    background-color: transparent;
+    font-family: fantasy;
+    height: 2.5rem;
+    letter-spacing: 1px;
+    border: 1px solid white
+}
+
+.contact-about-section.admin-contact-about .textarea-description {
+    font-size: 15px;
+    color: white;
+    background-color: transparent;
+    line-height: 1.42857143;
+    border: 1px solid white
+}
+
+.contact-about-section.admin-contact-about .textarea-description2 {
+    font-size: 19px;
+    color: white;
+    background-color: transparent;
+    line-height: 1.42857143;
+    border: 1px solid white
+}
+
+.contact-about-section.admin-contact-about .textarea-description2:focus, 
+.contact-about-section.admin-contact-about .textarea-description:focus, 
+.contact-about-section.admin-contact-about .input-title:focus,
+.contact-about-section.admin-contact-about .input-buttonLink:focus
+{
+    border: 1px solid rgb(102, 58, 102)
+}
+
+.contact-about-section.admin-contact-about .input-buttonText {
+    position: relative;
+    text-align: center;
+    display: inline-block;
+    width: 9.375rem;
+    background-color: #a33d3d;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: none;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.contact-about-section.admin-contact-about .input-buttonLink {
+    height: 2rem;
+}

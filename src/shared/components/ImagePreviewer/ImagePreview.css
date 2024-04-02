@@ -1,0 +1,128 @@
+.image-Previewer {
+    z-index: 20;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    top: 10vh;
+    width: 100%;
+    height: auto;
+    background: transparent;
+}
+
+.image-Previewer .previewer-Slider {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26);
+    border-radius: 3px;
+    border: 4px solid #fff;
+    position: relative;
+    width: 80%;
+    height: 70vh;
+    background-color: white;
+    z-index: 50;
+}
+
+.image-Previewer .previewer-Slider .previewer-prev {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.image-Previewer .previewer-Slider .previewer-next {
+    position: absolute;
+    width: 50%;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    opacity: 0;
+    transition: opacity 0.3s ease-in;
+}
+
+.image-Previewer .previewer-Slider div:hover {
+    opacity: 1;
+    transition: opacity 0s;
+}
+
+.image-Previewer .previewer-bottom {
+    display: flex;
+    flex-direction: row;
+    height: 10vh;
+    width: 80%;
+    padding: 4px 16px;
+}
+
+.image-Previewer .previewer-bottom .previewer-slide-details {
+    width: 50%;
+    font-size: 12px;
+    color: #cac2c2;
+}
+
+.image-Previewer .previewer-bottom .previewer-cancel{
+    width: 50%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.image-Previewer .previewer-bottom .previewer-cancel img{
+    transition: opacity 0.3s ease-in;
+    opacity: .7;
+    cursor: pointer;
+}
+
+.image-Previewer .previewer-bottom .previewer-cancel img:hover{
+    transition: opacity 0s;
+    opacity: 1;
+}
+
+.image-Previewer .previewer-Slider > img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.image-Previewer .previewer-Slider .icon-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+.image-Previewer .previewer-Slider .previewer-next .icon-wrapper img {
+    float: right;
+}
+
+@media (max-width: 326px) {
+    .image-Previewer .previewer-Slider .icon-wrapper img {
+        width: 60%;
+        height: 60%;
+    }
+}
+
+.image-Previewer-enter {
+    transform: translateY(-10rem);
+    opacity: 0;
+}
+
+.image-Previewer-enter-active {
+    transform: translateY(0);
+    opacity: 1;
+    transition: all 200ms;
+}
+
+.image-Previewer-exit {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.image-Previewer-exit-active {
+    transform: translateY(-10rem);
+    opacity: 0;
+    transition: all 200ms;
+}

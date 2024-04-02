@@ -1,0 +1,62 @@
+.modal {
+  display: block !important;
+  z-index: 100 !important;
+  position: fixed !important;
+  top: 10vh !important;
+  left: 10% !important;
+  width: 80% !important;
+  max-height: 80vh !important; /* Added maximum height to limit the Modal's height */
+  overflow-y: auto !important; /* Added scrolling for the Modal content */
+  background: white !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.26) !important;
+  border-radius: 8px !important;
+  height: fit-content !important;
+}
+
+.modal__header {
+  width: 100% !important;
+  padding: 1rem 0.5rem !important;
+  background: #2a006e !important;
+  color: white !important;
+}
+
+.modal__header h2 {
+  margin: 0.5rem !important;
+}
+
+.modal__content {
+  padding: 1rem !important;
+}
+
+.modal__footer {
+  padding: 1rem 0.5rem !important;
+}
+
+@media (min-width: 768px) {
+  .modal {
+    left: calc(50% - 20rem) !important;
+    width: 40rem !important;
+  }
+}
+
+.modal-enter {
+  transform: translateY(-10rem) !important;
+  opacity: 0 !important;
+}
+
+.modal-enter-active {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+  transition: all 200ms !important;
+}
+
+.modal-exit {
+  transform: translateY(0) !important;
+  opacity: 1 !important;
+}
+
+.modal-exit-active {
+  transform: translateY(-10rem) !important;
+  opacity: 0 !important;
+  transition: all 200ms !important;
+}

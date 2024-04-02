@@ -1,0 +1,15 @@
+.error-component {
+    min-height: 20vh;
+    background-color: #c3c3c3;
+    color: black;
+    display: flex;
+    margin: 2rem;
+    border-radius: 4px;
+}
+
+.error-component h1{
+    padding: 1rem;
+    font-size: 18px;
+    color: #131111;
+}
+

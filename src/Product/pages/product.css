@@ -1,0 +1,22 @@
+.product-page {
+    margin-top: 5rem;
+}
+
+.product-page .actions {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.product-page .actions .btn-primary {
+    margin-right: 1rem;
+}
+
+.spinner-container {
+    width: 100%;
+    min-height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
